@@ -1,0 +1,163 @@
+
+
+@media (min-width: 1100px) {
+  .topnav {
+    background-color: #454545;
+    overflow: hidden;
+    box-shadow: 0 0 10px #cccccc;
+  }
+
+  #img-topnav {
+    margin: 0 0 0 34%;
+    height: 43px;
+    width: 163px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav img, a {
+    float: left;
+    color: #e6e6e6;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+  .topnav a {
+    padding: 11px 16px;
+  }
+
+  .active {
+    margin: 0 0 0 25px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #FFA559;
+    color: white;
+  }
+}
+@media (max-width: 1100px) {
+  /* For a screen < 960px, this CSS will be read */
+  .topnav {
+    background-color: #454545;
+    overflow: hidden;
+    box-shadow: 0 0 10px #cccccc;
+  }
+
+  #img-topnav {
+    margin: 0 0 0 25%;
+    height: 43px;
+    width: 163px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav img, a {
+    float: left;
+    color: #e6e6e6;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+  .topnav a {
+    padding: 11px 16px;
+  }
+
+  .active {
+    margin: 0 0 0 25px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #FFA559;
+    color: white;
+  }
+}
+
+@media (max-width: 870px) {
+  /* For a screen < 960px, this CSS will be read */
+  .topnav {
+    background-color: #454545;
+    overflow: hidden;
+    box-shadow: 0 0 10px #cccccc;
+  }
+
+  #img-topnav {
+    margin: 0 0 0 14%;
+    height: 43px;
+    width: 163px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav img, a {
+    float: left;
+    color: #e6e6e6;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+  .topnav a {
+    padding: 11px 16px;
+  }
+
+  .active {
+    margin: 0 0 0 25px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #FFA559;
+    color: white;
+  }
+}
+@media (max-width: 750px) {
+  /* For a screen < 720px, this CSS will be read */
+  #img-topnav {
+    margin: 0 0 0 35%;
+  }
+  .topnav {
+    background-color: #454545;
+    overflow: hidden;
+    box-shadow: 0 0 10px #cccccc;
+  }
+  .topnav a {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  /* For a screen < 540px, this CSS will be read */
+  #img-topnav {
+    margin: 0 0 0 33%;
+  }
+  .topnav {
+    background-color: #454545;
+    overflow: hidden;
+    box-shadow: 0 0 10px #cccccc;
+  }
+  .topnav a {
+    display: none;
+  }
+}
+

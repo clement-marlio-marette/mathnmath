@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style-lessons.css">
+   <title>Math&Math | Lessons</title>
+  </head>
+
+  <body>
+
+    <div class="topnav">
+      <img id="img-topnav" alt="Math&Math" src="../images/logo.png">
+      <a class="active" href="../index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="my-profile.html">About me</a>
+      <a href="apply.html" class="btn-red">Apply</a>
+
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">
+        <div class="menu-animation" onclick="myFunction(this)" >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+      </span>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "220px";
+          document.getElementById("main").style.marginLeft = "220px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active" href="../index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="my-profile.html">About me</a>
+        <a href="apply.html" class="btn-red">Apply</a>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script type="text/javascript">
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+
+    <div class="banner-lessons">
+      <div class="container">
+        <h1>Learn more about the lessons</h1>
+        <h2>Start working on yourself today!</h2>
+        <a href="apply.html" class="btn-red">Start now</a>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="card-brown">
+        <div class="inside-card">
+          <img class="img-class" src="../images/physical-class.jpg">
+          <h2> One-to-one physical lessons </h2>
+        </div>
+        <div class="text">
+          <p>You may want to seek a physical lesson at your house, where we will have a one-to-one lesson where I will help you improve your maths skills. Starting from any level, I am capable to teach and help you in any part of maths where you may find difficulty.</p>
+          <p> This option allows you to have me physically. This may reassure you if you find useful the physical human interaction. I am happy to do the trip to where you want so I can help you. This one-to-one lesson will be charged at an hourly rate of $40.</p>
+        </div>
+      </div>
+
+      <div class="card-brown">
+        <div class="inside-card">
+          <img class="img-class" src="../images/online-class.jpg">
+          <h2> One-to-one online lessons </h2>
+        </div>
+        <div class="text">
+          <p>You may want to seek an online lession through Zoom, Teams or Google Meet, where we will have a one-to-one lesson where I will help you improve your maths skills.Starting from any level, I am capable to teach and help you in any part of maths where you may find difficulty.</p>
+          <p> This option allows you to have me remotly. This ay give you more flexibility regarding the time, if you find it useful to have a cheaper option and where you do not require a physical interaction. This one-to-one lesson will be charged at an hourly rate of $30.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

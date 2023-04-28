@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+   <title>Math&Math | Home</title>
+  </head>
+
+  <body>
+
+    <div class="topnav">
+      <img id="img-topnav" alt="Math&Math" src="images/logo.png">
+      <a class="active" href="index.html">Home</a>
+      <a href="pages/lessons.html">Lessons</a>
+      <a href="pages/my-profile.html">About me</a>
+      <a href="pages/apply.html" class="btn-red">Apply</a>
+
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">
+        <div class="menu-animation" onclick="myFunction(this)" >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+      </span>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "220px";
+          document.getElementById("main").style.marginLeft = "220px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active" href="#">Home</a>
+        <a href="pages/lessons.html">Lessons</a>
+        <a href="pages/my-profile.html">About me</a>
+        <a href="pages/apply.html" class="btn-red">Apply</a>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script type="text/javascript">
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <div class="banner">
+      <div class="container">
+        <h1>Improve your level in mathematics.</h1>
+        <h2>Start working on yourself today!</h2>
+        <a href="pages/apply.html" class="btn-red">Start now</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card-brown">
+        <h2>Lessons</h2>
+        <p>Welcome to Math&Math, a personal website where you can reach out to me so I can help you improve your level in maths. Having trouble understanding a notion? Getting prepared for an exam? Just want to learn for fun? I've got you! I am passionate about Maths and ready to help you. Check out the different lessons I offer by clicking the following button:</p>
+      </div>
+      <a href="pages/lessons.html" class="btn-orange">Lessons</a>
+      <div class="card-brown">
+        <h2 style="margin-top: 90px;">About me</h2>
+        <p>I'm Clément Marlio-Marette, first year student and passionate about mathematics. I may be young but I am sure to be dynamic and of help. If you want to learn more about me, you may click, in the top navigation bar, the "about-me" to find my full profile and platforms, through where you can contact me.</p>
+      </div>
+    </div>
+
+  </body>
+</html>

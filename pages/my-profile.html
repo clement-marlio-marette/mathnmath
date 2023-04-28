@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math&Math | About me</title>
+    <meta name="viewport" content="Welcome to Math&Math, the online platform to help you get better at Maths.">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8075b89bcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style-my-profile.css">
+  </head>
+  <body>
+
+    <div class="topnav">
+      <img id="img-topnav" alt="Math&Math" src="../images/logo.png">
+      <a class="active" href="../index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="my-profile.html">About me</a>
+      <a href="apply.html" class="btn-red">Apply</a>
+
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">
+        <div class="menu-animation" onclick="myFunction(this)" >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+      </span>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "200px";
+          document.getElementById("main").style.marginLeft = "200px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active" href="../index.html">Home</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="my-profile.html">About me</a>
+        <a href="apply.html" class="btn-red">Apply</a>
+      </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script type="text/javascript">
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+
+    <div class="container">
+
+      <div class="card-brown">
+        <h1>Who am I?</h1>
+        <img src="../images/image-profile.jpg" width="100px" alt="Clément Marlio-Marette" class="center zoom" id="profile">
+
+        <p id="first-sentence">I'm Clément Marlio-Marette, a first year student at ESSEC Business School in the Global BBA program in Singapore.</p>
+        <p id="Second-sentence">I live around the world in order to discover new cultures and expand my knowledge.</p>
+      </div>
+
+      <div class="card-brown">
+        <h2><i class="fa-solid fa-earth-africa"></i> Countries <i class="fa-solid fa-plane"></i></h2>
+        <p>As said previously, I lived in many countries during my youthness which gave me an open mindness, the ability to adapt to any environment and finally the taste of discovering unpopular places!</p>
+        <p>Born in London, England <img src="../images/uk flag.png" class="flag">, I travelled to Romania <img src="../images/romania flag.png" class="flag">, where I stayed for 3 years. Later on, I flew to Africa where I lived 3 years in Cameroon <img src="../images/cameroon flag.png" class="flag">. Then, I went back to my birth place, London, for 5 years. I mainly learned english during this stay. To continue, I crossed once again the Mediterranean Sea to the biggest country in Africa: Algeria <img src="../images/algeria flag.png" class="flag">. Unknown from most people, I've lived there for 5 years. In my last expatriation with my parents, we travelled near the equator, to the Republic of Congo <img src="../images/congo flag.png" class="flag">. Even though it was the shortest stay I've ever done, 1 year, it was so enriching! ... But the adventure NEVER stops! Once again, and here for the first time, I had the world on my hands, with countless destinations to choose, and the first one was in a continent I've never visited before, in a country that may be small but is very developped, I call it <b>Singapore</b> <img src="../images/singapore flag.png" class="flag">!</p>
+      </div>
+
+      <div class="card-brown">
+        <h3><i class="fa-solid fa-car"></i> Driving <i class="fa-solid fa-motorcycle"></i></h3>
+        <p>I am passionate about driving. It gives me this alone-time where I can enjoy speed and fun while listening to music. From looking at the beautiful views to being with friends and family, I simply miss when I am not able to drive.</p>
+        <p>I got my driving license when I was only 16 in the Republic of Congo. There, the laws are very loose and it's very easy to obtain a driving license. However, recently, while in a holiday trip to Vietnam, I drove for the first time a motorcycle. It was scary at first, but very easy and exciting to drive. After only a few days of riding one, I am now confident to try and get a motorcycle driving license. And who knows, maybe in Congo <img src="../images/wink.png" id="wink"></p>
+        <img src="../images/driving.jpg" class="center zoom" id="driving">
+      </div>
+
+      <div class="card-brown">
+        <h4>Follow me:</h4>
+        <div class="follow-me">
+          <ul class="unorder-list">
+            <li>
+              <a class="social-media" href="https://www.instagram.com/clement.marlio.marette/" target="_blank">
+                <i class="fa-brands fa-square-instagram media"></i></a>
+            </li>
+            <li>
+              <a class="social-media" href="https://www.linkedin.com/in/clement-marlio-marette" target="_blank">
+                <i class="fa-brands fa-linkedin links media"></i></a>
+            </li>
+            <li>
+              <a class="social-media" href="https://www.facebook.com/profile.php?id=100082150135258" target="_blank">
+                <i class="fa-brands fa-square-facebook media"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

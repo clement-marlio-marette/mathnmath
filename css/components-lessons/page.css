@@ -1,0 +1,67 @@
+.page {
+  margin: 10px auto;
+  display: flex;
+}
+@media (max-width: 1195px) {
+  /* For a screen < 960px, this CSS will be read */
+  .page {
+    flex-direction: column;
+  }
+  .card-brown {
+    margin: 20px auto;
+  }
+}
+@media (max-width: 961px) {
+  /* For a screen < 960px, this CSS will be read */
+  .page {
+    width: 700px;
+  }
+  .page h1 {
+    width: 700px;
+  }
+}
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .page {
+    flex-direction: column;
+  }
+  .card-brown {
+    margin: 20px auto;
+  }
+}
+@media (max-width: 780px) {
+  .card-brown {
+    width: 500px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .page {
+    width: 500px;
+    flex-direction: column;
+  }
+  .page h1 {
+    width: 500px;
+  }
+}
+@media (max-width: 630px) {
+  .card-brown {
+    width: 400px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .page {
+    width: auto;
+    flex-direction: column;
+  }
+  .page h1 {
+    width: 300px;
+  }
+  .card-brown {
+    width: 385px;
+  }
+  .page .img-class {
+    width: 160px;
+  }
+}
